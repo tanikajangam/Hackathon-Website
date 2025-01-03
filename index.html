@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KodaHacks</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <link rel="shortcut icon" type="image/png" href="svg/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="loader">
+        <object type="image/svg+xml" data="svg/preloaderthing.svg"></object>
+
+    </div>
+    <div class="hero-section">
+        <!-- <div style="visibility:hidden">
+            <audio autoplay loop preload="auto">
+                <source src="audio/Home.mp3">
+            </audio>
+        </div> -->
+        <audio src="audio/Home.mp3" preload="metadata">
+            <source src="audio/Home.mp3">
+        </audio>
+
+        <div class="nav-wrapper">
+
+            <nav>
+                <i class="fas fa-bars nav-toggle"></i>
+
+                <div class="logo">
+                    <p>Koda<span class="blue">Hacks</span></p>
+                </div>
+                <ul class="nav-links">
+                    <li><a class="underline blue-underline" href="#home">Home</a></li>
+                    <li><a class="underline blue-underline" href="#schedule">Schedule</a></li>
+                    <li><a class="underline blue-underline" href="#tracks">Tracks</a></li>
+                    <li><a class="underline blue-underline" href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+
+        <div class="hero-inner" id="#home">
+            <object id="bg-img" class="bg-img" type="image/svg+xml" data="svg/Final-Penguin3.svg"></object>
+            <div class="hero-inner-2">
+                <img src="svg/logo3.svg" data-aos="fade-up" class="title">
+                <p data-aos="fade-up" data-aos-offset="40" data-aos-delay="20" data-aos-duration="1000">
+                    Registration is temporarily closed. Check back in soon!</p>
+                <!--<a data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000"
+                    class="registration-link grow" href="#"> Register Now <i class="fas fa-arrow-right"></i></a> -->
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <div id="schedule" class="schedule-section">
+
+
+        <div class="schedule-section-inner" data-aos="fade-up">
+            <img class="img-title schedule-title" src="svg/schedule.png">
+
+
+            <!-- Tab links -->
+            <div class="tz-tab">
+                <button class="tablinks ist" id="defaultOpen" onclick="openn(event, 'ist')">IST</button>
+                <button class="tablinks bst" onclick="openn(event, 'bst')">BST</button>
+                <button class="tablinks est" onclick="openn(event, 'est')">EST</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="ist" class="tabcontent" data-aos="fade-up">
+                <div class="section">
+                    <div class="section-1">
+                        <img class="img-title" src="svg/friday.png">
+                        <div class="friday-inner">
+                            <div class="times">
+                                <div class="time">
+                                    <p class="time-inner">7:30 PM</p> <img src="svg/line.svg">
+                                    <p class="eventName">Opening Ceremony</p>
+                                </div>
+                                <div class="time">
+                                    <p class="time-inner">8:00 PM</p> <img src="svg/line.svg">
+                                    <p class="eventName">Starting Challenges Released</p>
+                                </div>
+                                <div class="time">
+                                    <p class="time-inner">8:30 PM</p> <img src="svg/line.svg">
+                                    <p class="eventName">Hacking Begins</p>
+                                </div>
+                                <div class="bracket">
+                                    <div class="bracket-time">
+                                        <p class="time-inner">9:00 PM</p>
+                                        <p class="time-inner">10:00 PM</p>
+                                    </div>
+                                    <img class="b1" src="svg/brackets.svg">
+                                    <p class="eventName">Team Building</p>
+                                </div>
+                                <div class="bracket">
+                                    <div class="bracket-time">
+                                        <p class="time-inner">10:00 PM</p>
+                                        <p class="time-inner">11:00 PM</p>
+                                    </div>
+                                    <img class="b1" src="svg/brackets.svg">
+                                    <p class="eventName">Introductory FAQ Workshop</p>
+                                </div>
+
+                                <div class="bracket">
+                                    <div class="bracket-time">
+                                        <p class="time-inner">11:30 PM</p>
+                                        <p class="time-inner">12:30 AM</p>
+                                    </div>
+                                    <img class="b1" src="svg/brackets.svg">
+                                    <p class="eventName">Workshop 1A: Intro to Web Development</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="penguin-container">
+                            <img class="sleeping-penguin" src="svg/sleeping-penguin.svg">
+                            <img class="broccoli" src="svg/broccoli.svg">
+                        </div>
+
+                        <br>
+                        <img class="img-title" src="svg/saturday.png">
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">1:00 AM</p>
+                                <p class="time-inner">2:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 2A: Intro to Python</p>
+                        </div>
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">2:30 AM</p>
+                                <p class="time-inner">3:30 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 3A: Intro to iOS Development </p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">3:30 AM</p>
+                                <p class="time-inner">4:30 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Mini-Event: Coding Trivia</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">4:30 AM</p>
+                                <p class="time-inner">7:30 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Challenge: Competitive Programming I</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">8:00 AM</p>
+                                <p class="time-inner">9:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 4A: Blockchain & Cryptocurrency </p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">9:30 AM</p>
+                                <p class="time-inner">10:30 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Sponsored Workshop</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">10:30 AM</p>
+                                <p class="time-inner">11:30 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Mini-Event: Bug Bounty</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">11:30 AM</p>
+                                <p class="time-inner">12:30 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 1B: Intro to Web Development </p>
+                        </div>
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">1:00 PM</p>
+                                <p class="time-inner">2:00 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 2B: Intro to Python</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">2:30 PM</p>
+                                <p class="time-inner">3:30 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 3B: Intro to iOS Development</p>
+                        </div>
+                    </div>
+                    <div class="section-2">
+                        <img class="img-title second-sat" src="svg/saturday.png">
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">3:30 PM</p>
+                                <p class="time-inner">4:30 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Mini-Event: General Trivia</p>
+                        </div>
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">4:30 PM</p>
+                                <p class="time-inner">7:30 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Challenge: Competitive Programming II</p>
+                        </div>
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">8:00 PM</p>
+                                <p class="time-inner">9:00 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 4B: Intro to Blockchain & Cryptocurrency</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">9:30 PM</p>
+                                <p class="time-inner">10:30 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Sponsored Workshop</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">11:00 PM</p>
+                                <p class="time-inner">12:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">AMA Workshop & Check-In</p>
+                        </div>
+
+                        <img class="img-title" src="svg/sunday.png">
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">12:30 AM</p>
+                                <p class="time-inner">2:30 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Challenge: CTF</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">3:00 AM</p>
+                                <p class="time-inner">4:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Mini-Event: Code Golf</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">4:30 AM</p>
+                                <p class="time-inner">6:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 5A: CTF Walkthrough </p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">6:30 AM</p>
+                                <p class="time-inner">7:30 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 6A: Analyzing Community Creations</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">8:00 AM</p>
+                                <p class="time-inner">9:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 7A: UI Design</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">9:30 AM</p>
+                                <p class="time-inner">10:30 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Mini-Event: Chess Tournament</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">11:00 AM</p>
+                                <p class="time-inner">12:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Sponsored Workshop</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">1:30 PM</p>
+                                <p class="time-inner">2:30 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Mini-Event: Wiki Races</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">3:00 PM</p>
+                                <p class="time-inner">4:30 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 5B: CTF Walkthrough</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">5:00 PM</p>
+                                <p class="time-inner">6:00 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 6B: Analyzing Community Creations </p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">6:30 PM</p>
+                                <p class="time-inner">7:30 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 7B: UI Design</p>
+                        </div>
+                        <div class="time">
+                            <p class="time-inner">8:30 PM</p> <img src="svg/line.svg">
+                            <p class="eventName">Hacking Ends (Projects due, Challenges still open)</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+            <div id="bst" class="tabcontent" data-aos="fade-up">
+                <div class="section">
+                    <div class="section-1">
+                        <img class="img-title" src="svg/friday.png">
+                        <div class="friday-inner">
+                            <div class="times">
+                                <div class="time">
+                                    <p class="time-inner">3:00 PM</p> <img src="svg/line.svg">
+                                    <p class="eventName">Opening Ceremony</p>
+                                </div>
+                                <div class="time">
+                                    <p class="time-inner">3:30 PM</p> <img src="svg/line.svg">
+                                    <p class="eventName">Starting Challenges Released</p>
+                                </div>
+                                <div class="time">
+                                    <p class="time-inner">4:00 PM</p> <img src="svg/line.svg">
+                                    <p class="eventName">Hacking Begins</p>
+                                </div>
+                                <div class="bracket">
+                                    <div class="bracket-time">
+                                        <p class="time-inner">4:30 PM</p>
+                                        <p class="time-inner">5:30 PM</p>
+                                    </div>
+                                    <img class="b1" src="svg/brackets.svg">
+                                    <p class="eventName">Team Building</p>
+                                </div>
+                                <div class="bracket">
+                                    <div class="bracket-time">
+                                        <p class="time-inner">5:30 PM</p>
+                                        <p class="time-inner">6:30 PM</p>
+                                    </div>
+                                    <img class="b1" src="svg/brackets.svg">
+                                    <p class="eventName">Introductory FAQ Workshop</p>
+                                </div>
+
+                                <div class="bracket">
+                                    <div class="bracket-time">
+                                        <p class="time-inner">7:00 PM</p>
+                                        <p class="time-inner">8:00 PM</p>
+                                    </div>
+                                    <img class="b1" src="svg/brackets.svg">
+                                    <p class="eventName">Workshop 1A: Intro to Web Development</p>
+                                </div>
+
+                                <div class="bracket">
+                                    <div class="bracket-time">
+                                        <p class="time-inner">8:30 PM</p>
+                                        <p class="time-inner">9:30 PM</p>
+                                    </div>
+                                    <img class="b1" src="svg/brackets.svg">
+                                    <p class="eventName">Workshop 2A: Intro to Python</p>
+                                </div>
+                                <div class="bracket">
+                                    <div class="bracket-time">
+                                        <p class="time-inner">10:00 PM</p>
+                                        <p class="time-inner">11:00 PM</p>
+                                    </div>
+                                    <img class="b1" src="svg/brackets.svg">
+                                    <p class="eventName">Workshop 3A: Intro to iOS Development </p>
+                                </div>
+
+                                <div class="bracket">
+                                    <div class="bracket-time">
+                                        <p class="time-inner">11:00 PM</p>
+                                        <p class="time-inner">12:00 AM</p>
+                                    </div>
+                                    <img class="b1" src="svg/brackets.svg">
+                                    <p class="eventName">Mini-Event: Coding Trivia</p>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="penguin-container">
+                            <img class="sleeping-penguin" src="svg/sleeping-penguin.svg">
+                            <img class="broccoli" src="svg/broccoli.svg">
+                        </div>
+
+                        <br>
+                        <img class="img-title" src="svg/saturday.png">
+
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">12:00 AM</p>
+                                <p class="time-inner">3:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Challenge: Competitive Programming I</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">3:30 AM</p>
+                                <p class="time-inner">4:30 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 4A: Blockchain & Cryptocurrency </p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">5:00 AM</p>
+                                <p class="time-inner">6:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Sponsored Workshop</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">6:00 AM</p>
+                                <p class="time-inner">7:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Mini-Event: Bug Bounty</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">7:00 AM</p>
+                                <p class="time-inner">8:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 1B: Intro to Web Development </p>
+                        </div>
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">8:30 AM</p>
+                                <p class="time-inner">9:30 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 2B: Intro to Python</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">10:00 AM</p>
+                                <p class="time-inner">11:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 3B: Intro to iOS Development</p>
+                        </div>
+
+                    </div>
+                    <div class="section-2">
+                        <img class="img-title second-sat" src="svg/saturday.png">
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">11:00 AM</p>
+                                <p class="time-inner">12:00 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Mini-Event: General Trivia</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">12:00 PM</p>
+                                <p class="time-inner">3:00 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Challenge: Competitive Programming II</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">3:30 PM</p>
+                                <p class="time-inner">4:30 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 4B: Intro to Blockchain & Cryptocurrency</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">5:00 PM</p>
+                                <p class="time-inner">6:00 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Sponsored Workshop</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">6:30 PM</p>
+                                <p class="time-inner">7:30 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">AMA Workshop & Check-In</p>
+                        </div>
+
+                        <img class="img-title" src="svg/sunday.png">
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">8:00 PM</p>
+                                <p class="time-inner">10:00 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Challenge: CTF</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">10:30 PM</p>
+                                <p class="time-inner">11:30 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Mini-Event: Code Golf </p>
+                        </div>
+                        <!--sunday!!!-->
+                        <!--
+                        <div class = "bracket">
+                        <div class = "bracket-time">
+                            <p class = "time-inner">12:00 AM</p>
+                            <p class = "time-inner">1:00 AM</p>
+                        </div>
+                        <img class = "b1" src = "svg/brackets.svg">
+                        <p class = "eventName">Mini-Event: Fastest Coder/Code Golf </p>
+                        </div> {% endcomment %}
+                        -->
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">12:00 AM</p>
+                                <p class="time-inner">1:30 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 5A: CTF Walkthrough </p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">2:00 AM</p>
+                                <p class="time-inner">3:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 6A: Analyzing Community Creations</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">3:30 AM</p>
+                                <p class="time-inner">4:30 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 7A: UI Design</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">5:00 AM</p>
+                                <p class="time-inner">6:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Mini-Event: Chess Tournament</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">6:30 AM</p>
+                                <p class="time-inner">7:30 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Sponsored Workshop</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">9:00 AM</p>
+                                <p class="time-inner">10:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Mini-Event: Wiki Races</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">10:30 AM</p>
+                                <p class="time-inner">12:00 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 5B: CTF Walkthrough</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">12:30 PM</p>
+                                <p class="time-inner">1:30 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 6B: Analyzing Community Creations </p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">2:00 PM</p>
+                                <p class="time-inner">3:00 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 7B: UI Design</p>
+                        </div>
+                        <div class="time">
+                            <p class="time-inner">4:00 PM</p> <img src="svg/line.svg">
+                            <p class="eventName">Hacking Ends (Projects due, Challenges still open)</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="est" class="tabcontent" data-aos="fade-up">
+                <div class="section">
+                    <div class="section-1">
+                        <img class="img-title" src="svg/friday.png">
+                        <div class="friday-inner">
+                            <div class="times">
+                                <div class="time">
+                                    <p class="time-inner">10:00 AM</p> <img src="svg/line.svg">
+                                    <p class="eventName">Opening Ceremony</p>
+                                </div>
+                                <div class="time">
+                                    <p class="time-inner">10:30 AM</p> <img src="svg/line.svg">
+                                    <p class="eventName">Starting Challenges Released</p>
+                                </div>
+                                <div class="time">
+                                    <p class="time-inner">11:00 AM</p> <img src="svg/line.svg">
+                                    <p class="eventName">Hacking Begins </p>
+                                </div>
+                                <div class="bracket">
+                                    <div class="bracket-time">
+                                        <p class="time-inner">11:30 AM</p>
+                                        <p class="time-inner">12:30 PM</p>
+                                    </div>
+                                    <img class="b1" src="svg/brackets.svg">
+                                    <p class="eventName">Team Building</p>
+                                </div>
+                                <div class="bracket">
+                                    <div class="bracket-time">
+                                        <p class="time-inner">12:30 PM</p>
+                                        <p class="time-inner">1:30 PM</p>
+                                    </div>
+                                    <img class="b1" src="svg/brackets.svg">
+                                    <p class="eventName">Introductory FAQ Workshop</p>
+                                </div>
+
+                                <div class="bracket">
+                                    <div class="bracket-time">
+                                        <p class="time-inner">2:00 PM</p>
+                                        <p class="time-inner">3:00 PM</p>
+                                    </div>
+                                    <img class="b1" src="svg/brackets.svg">
+                                    <p class="eventName">Workshop 1A: Intro to Web Development</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">3:30 PM</p>
+                                <p class="time-inner">4:30 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 2A: Intro to Python</p>
+                        </div>
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">5:00 PM</p>
+                                <p class="time-inner">6:00 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 3A: Intro to iOS Development </p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">6:00 PM</p>
+                                <p class="time-inner">7:00 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Mini-Event: Coding Trivia</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">7:00 PM</p>
+                                <p class="time-inner">10:00 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Challenge: Competitive Programming I</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">10:30 PM</p>
+                                <p class="time-inner">11:30 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 4A: Blockchain & Cryptocurrency </p>
+                        </div>
+
+                        <div class="penguin-container">
+                            <img class="sleeping-penguin" src="svg/sleeping-penguin.svg">
+                            <img class="broccoli" src="svg/broccoli.svg">
+                        </div>
+
+                        <br>
+                        <img class="img-title" src="svg/saturday.png">
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">12:00 AM</p>
+                                <p class="time-inner">1:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Sponsored Workshop</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">1:00 AM</p>
+                                <p class="time-inner">2:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Mini-Event: Bug Bounty</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">2:00 AM</p>
+                                <p class="time-inner">3:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 1B: Intro to Web Development </p>
+                        </div>
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">3:30 AM</p>
+                                <p class="time-inner">4:30 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 2B: Intro to Python</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">5:00 AM</p>
+                                <p class="time-inner">6:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 3B: Intro to iOS Development</p>
+                        </div>
+                    </div>
+                    <div class="section-2">
+                        <img class="img-title" src="svg/saturday.png">
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">6:00 AM</p>
+                                <p class="time-inner">7:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Mini-Event: General Trivia</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">7:00 AM</p>
+                                <p class="time-inner">10:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Challenge: Competitive Programming II</p>
+                        </div>
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">10:30 AM</p>
+                                <p class="time-inner">11:30 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 4B: Intro to Blockchain & Cryptocurrency</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">12:00 PM</p>
+                                <p class="time-inner">1:00 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Sponsored Workshop</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">1:30 PM</p>
+                                <p class="time-inner">2:00 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">AMA Workshop & Check-In</p>
+                        </div>
+
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">3:00 PM</p>
+                                <p class="time-inner">5:00 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Challenge: CTF</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">5:30 PM</p>
+                                <p class="time-inner">6:30 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Mini-Event: Code Golf </p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">7:00 PM</p>
+                                <p class="time-inner">8:30 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 5A: CTF Walkthrough </p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">9:00 PM</p>
+                                <p class="time-inner">10:00 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 6A: Analyzing Community Creations</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">10:30 PM</p>
+                                <p class="time-inner">11:30 PM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 7A: UI Design</p>
+                        </div>
+
+                        <img class="img-title" src="svg/sunday.png">
+                        <!--sunday!!-->
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">12:00 AM</p>
+                                <p class="time-inner">1:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Mini-Event: Chess Tournament</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">1:30 AM</p>
+                                <p class="time-inner">2:30 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Sponsored Workshop</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">4:00 AM</p>
+                                <p class="time-inner">5:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Mini-Event: Wiki Races</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">5:30 AM</p>
+                                <p class="time-inner">7:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 5B: CTF Walkthrough</p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">7:30 AM</p>
+                                <p class="time-inner">8:30 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 6B: Analyzing Community Creations </p>
+                        </div>
+
+                        <div class="bracket">
+                            <div class="bracket-time">
+                                <p class="time-inner">9:00 AM</p>
+                                <p class="time-inner">10:00 AM</p>
+                            </div>
+                            <img class="b1" src="svg/brackets.svg">
+                            <p class="eventName">Workshop 7B: UI Design</p>
+                        </div>
+                        <div class="time">
+                            <p class="time-inner">11:00 AM</p> <img src="svg/line.svg">
+                            <p class="eventName">Hacking Ends (Projects due, Challenges still open)</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--<img src = "svg/tracks.png">-->
+
+    <div class="track-2">
+
+        <object class="planestuff" width="100%" type="image/svg+xml" data="svg/tracksectionstuff.svg"></object>
+
+
+
+        <!--
+        <div id="health-modal-container" class="modal-container">
+            <div class="modal-wrapper">
+                <div class="modal" id="hmodal">
+                    health modal
+                    <button id="health-close" class="close-modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="education-modal-container" class="modal-container">
+            <div class="modal" id="edmodal">
+                <button id="education-close" class="close-modal"><i class="fas fa-times"></i></button>
+                Education Modal
+            </div>
+        </div>
+        <div id="environment-modal-container" class="modal-container">
+            <div class="modal" id="envmodal">
+                <button id="environment-close" class="close-modal"><i class="fas fa-times"></i></button>
+                Environment Modal
+            </div>
+        </div>
+        <div id="finance-modal-container" class="modal-container">
+            <div class="modal" id="fmodal">
+                <button id="finance-close" class="close-modal"><i class="fas fa-times"></i></button>
+                Finance Modal
+            </div>
+        </div>
+-->
+        <img id="tracks" class="track-heading" src="svg/tracks.png">
+
+
+        <div class="tracks-top" data-aos="fade-up">
+
+            <div class="trackcircle">
+
+                <!--<button id="healthModal" class="open-modal">
+                    <div class="track-overlay"></div>
+                </button>-->
+                <object width="100%" type="image/svg+xml" data="svg/health-circle.svg"></object>
+
+                <p>Health</p>
+            </div>
+
+            <div class="trackcircle">
+
+                <!--<button id="environmentModal" class="open-modal">
+                    <div class="track-overlay"></div>
+                </button>-->
+                <object width="100%" type="image/svg+xml" data="svg/environment-circle.svg"></object>
+                <p>Environment</p>
+            </div>
+
+        </div>
+
+
+        <div class="tracks-bottom" data-aos="fade-up">
+            <div class="trackcircle">
+
+                <!--<button id="educationModal" class="open-modal">
+                    <div class="track-overlay"></div>
+                </button>-->
+                <object width="100%" type="image/svg+xml" data="svg/education-circle.svg"></object>
+
+                <p>education</p>
+            </div>
+
+            <div class="trackcircle">
+                <!--<button id="financeModal" class="open-modal">
+                    <div class="track-overlay"></div>
+                </button>-->
+                <object width="100%" type="image/svg+xml" data="svg/Finance-circle.svg"></object>
+                <p>Finance</p>
+            </div>
+        </div>
+
+        <!--<object class="penguin-balloons" type="image/svg+xml" data="svg/penguin-balloons.svg" data-aos = "fade-up"></object>
+<object class="balloons" type="image/svg+xml" data="svg/balloons.svg" data-aos = "fade-up"></object>        -->
+
+
+
+    </div>
+
+
+    <div id="faq" class="sunset">
+        <div class="faq-section-inner" data-aos="fade-up">
+            <img class="faq" src="svg/faq.png">
+            <div class="faq-c">
+                <div class="faq-1">
+                    <div class="accordion-wrapper">
+                        <button class="accordion ">
+                            <img class="arrow-icon" src="svg/red-arrow.svg">
+                            <p class="underline red-underline">What is a hackathon?</p>
+                        </button>
+                        <div class="panel">
+                            <p>A hackathon is typically a 24-72 hour programming event (in this case, 48), where
+                                participants work together to innovate, create, and pitch their projects that fall under
+                                one of the themes (see <a class="faq-link" href="#tracks">tracks</a>) of the event. You
+                                may choose any technologies, programming languages, platforms, or services to build your
+                                project. There will be workshops, challenges, mini-events, and opportunities to network
+                                with sponsors and mentors throughout the event.</p>
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <div class="accordion-wrapper">
+                        <button class="accordion ">
+                            <img class="arrow-icon" src="svg/red-arrow.svg">
+                            <p class="underline red-underline">How do I participate?</p>
+                        </button>
+                        <div class="panel">
+                            <p>You can sign up for the hackathon <a class="faq-link" href="#">here</a>), and you'll be
+                                added to our mailing list and start receiving updates and more information as the event
+                                approaches. You can leave and rejoin at any time throughout the event (although we don't
+                                recommend missing out on all the awesome workshops and events).</p>
+                        </div>
+                    </div>
+
+
+                    <br>
+
+                    <div class="accordion-wrapper">
+                        <button class="accordion ">
+                            <img class="arrow-icon " src="svg/red-arrow.svg">
+                            <p class="underline red-underline">Who can participate?</p>
+                        </button>
+                        <div class="panel">
+                            <p>Since this is a virtual event, anyone from around the world can participate. There is no
+                                age or experience requirement, and we welcome people from all backgrounds. </p>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-wrapper ">
+                        <button class="accordion ">
+                            <img class="arrow-icon" src="svg/red-arrow.svg">
+                            <p class="underline red-underline">What experience is required?</p>
+                        </button>
+                        <div class="panel">
+                            <p>No coding experience is required to attend the event. If you want to compete and submit
+                                your project to win a prize, it is recommended that you have experience with programming
+                                and developing projects. But, even if you don't want to engage in the competitive
+                                aspect, KodaHacks is a great opportunity to learn new technologies and languages. For
+                                beginners, there will be workshops, speakers, and mentors, all there to help you
+                                fast-track your development skills. </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-wrapper ">
+                        <button class="accordion ">
+                            <img class="arrow-icon" src="svg/red-arrow.svg">
+                            <p class="underline red-underline">What if I've never been to a hackathon?</p>
+                        </button>
+                        <div class="panel">
+                            <p>That's no problem at all! Whether you want to go all out and stay up hacking away on your
+                                project or take this one easy and focus on learning and networking, the choice is yours!
+                                Organizers and mentors are present throughout the event and in the days and weeks
+                                leading up to it to help if you get stuck. We’ll also send out a hacker guide through
+                                email a few weeks before the event so that you know what to expect.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="faq-2">
+
+                    <div class="accordion-wrapper ">
+                        <button class="accordion ">
+                            <img class="arrow-icon" src="svg/purple-arrow.svg">
+                            <p class="underline purple-underline">What do I need?</p>
+                        </button>
+                        <div class="panel">
+                            <p>All you need is a working computer and an internet connection (and probably a lot of
+                                caffiene and broccoli!). </p>
+                        </div>
+                    </div>
+                    <br>
+
+
+                    <div class="accordion-wrapper ">
+                        <button class="accordion ">
+                            <img class="arrow-icon" src="svg/purple-arrow.svg">
+                            <p class="underline purple-underline">Do I need a team?</p>
+                        </button>
+                        <div class="panel">
+                            <p>Though you can work alone, we strongly recommend working in a group to get the most out
+                                of the hackathon experience. Team sizes can vary between 1-4 people.</p>
+                        </div>
+                    </div>
+
+                    <br>
+
+
+                    <div class="accordion-wrapper ">
+                        <button class="accordion ">
+                            <img class="arrow-icon" src="svg/purple-arrow.svg">
+                            <p class="underline purple-underline">Are there prizes?</p>
+                        </button>
+                        <div class="panel">
+                            <p>Definitely! Our judges will select the best project submissions, and the winning teams
+                                will receive cash prizes of up to $2,000 and tons of free services and technologies.
+                                Specific prizes will be announced as the date of the event approaches.</p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="accordion-wrapper ">
+                        <button class="accordion ">
+                            <img class="arrow-icon" src="svg/purple-arrow.svg">
+                            <p class="underline purple-underline">How much does it cost?</p>
+                        </button>
+                        <div class="panel">
+                            <p>
+                                Thanks to our sponsors, this event is absolutely free to attend! There is no cost
+                                associated with participating, attending workshops, or submitting projects.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-wrapper ">
+                        <button class="accordion ">
+                            <img class="arrow-icon" src="svg/purple-arrow.svg">
+                            <p class="underline purple-underline">Can I start my project before the event? </p>
+                        </button>
+                        <div class="panel">
+                            <p>
+                                You can start brainstorming ideas for your project, but you cannot write any code before
+                                the hacker clock starts. Any projects started before the event or projects submitted to
+                                other hackathons will be disqualified.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-wrapper ">
+                        <button class="accordion ">
+                            <img class="arrow-icon" src="svg/purple-arrow.svg">
+                            <p class="underline purple-underline">I still have questions!</p>
+                        </button>
+                        <div class="panel">
+                            <p>Understandable! You can join our Discord server <a href="#" class="faq-link">here</a> and
+                                chat with an organizer or other participants to learn more about the event.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="sponsors-2">
+            <img class="sponsor-heading" src="svg/sponsors.png">
+            <p>Interested in sponsoring us? Shoot us an email at <a
+                    href="https://www.youtube.com/watch?v=aMcjxSThD54">idkkkk@gmail.com</a>!</p>
+            <div class="sponsor-row">
+
+                <img src="svg/samplesponsor-1.png">
+                <img src="svg/samplesponsor-2.png">
+                <img src="svg/samplesponsor-3.png">
+                <img src="svg/samplesponsor-1.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <img src="svg/cityFooter2.svg">
+        <div class="footer-2">
+            <div class="footer-inner">
+
+                <div>
+
+                    <p class="footer-text">Koda<span class="blue">Hacks</span></p>
+
+                </div>
+
+
+            </div>
+            <p class="copyright">Copyright © 2021 KodaHacks | All Rights Reserved</p>
+
+        </div>
+    </div>
+
+
+    </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="app.js"></script>
+</body>
+
+
+<!-- Load the main script for the player -->
+<script src="app.js"></script>
+</body>
+
+</html>
